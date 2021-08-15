@@ -1,0 +1,117 @@
+@import "_variables.scss";
+
+/*==================
+  General
+  ==================*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+html{
+  font-size: 18px;
+  background: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  font-family: $font;
+ }
+
+h1{
+  margin-bottom: 20px;
+  color: $Dark-Grayish-Blue;
+ }
+
+h2{
+  margin-bottom: 20px;
+ }
+
+ h3{
+ }
+
+p{
+  color: $Grayish-Blue;
+  margin-bottom: 40px;
+ }
+
+a{
+  text-decoration: none;
+  color: white;
+ }
+
+/*==================
+  Main Container
+  ==================*/
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+ }
+
+/*==================
+  Logo Container
+  ==================*/
+
+.logo{
+  margin-bottom: 40px;
+}
+
+/*==================
+  Download Buttons
+  ==================*/
+
+.download-btns{
+  margin-bottom: 150px;
+ }
+
+.IOS-btn{
+  background-color: $Strong-Cyan;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 3px 1px $Strong-Cyan-dark;
+ }
+
+.Mac-btn{
+  background-color: $Light-Blue;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 3px 1px $Light-Blue-dark;
+}
+
+/*==================
+  Screen Container
+  ==================*/
+
+.computer-screen-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.screen-image{
+  transform: translatex(-20%);
+}
+
+.screen-headers{
+  width: 40%;
+}
+
+/*==================
+  Main Container
+  ==================*/
+
+/*==================
+  Attribution
+  ==================*/
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+/*==================
+  General
+  ==================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  background: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #4c545d;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  color: #9fabb2;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*==================
+  Main Container
+  ==================*/
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+/*==================
+  Logo Container
+  ==================*/
+.logo {
+  margin-bottom: 40px;
+}
+
+/*==================
+  Download Buttons
+  ==================*/
+.download-btns {
+  margin-bottom: 150px;
+}
+
+.IOS-btn {
+  background-color: #26baa4;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 3px 1px #1d907f;
+          box-shadow: 0 3px 1px #1d907f;
+}
+
+.Mac-btn {
+  background-color: #6173ff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 3px 1px #0017c7;
+          box-shadow: 0 3px 1px #0017c7;
+}
+
+/*==================
+  Screen Container
+  ==================*/
+.computer-screen-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+
+.screen-image {
+  -webkit-transform: translatex(-20%);
+          transform: translatex(-20%);
+}
+
+.screen-headers {
+  width: 40%;
+}
+
+/*==================
+  Main Container
+  ==================*/
+/*==================
+  Attribution
+  ==================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
