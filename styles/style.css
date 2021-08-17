@@ -124,8 +124,8 @@ a {
 .computer-screen-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -158,7 +158,7 @@ a {
 }
 
 .screen-image-wrapper .screen-image {
-  width: 100%;
+  max-width: 100%;
 }
 
 /*==================
@@ -172,6 +172,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 80px 0;
+}
+
+.devices-wrapper .devices-image {
+  max-width: 100%;
 }
 
 /*==================
@@ -304,5 +308,144 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+/*==============================================================
+                                    Media
+  =============================================================*/
+@media only screen and (max-width: 1024px) {
+  /*==================
+  General
+  ==================*/
+  html {
+    background: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h5 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  a {
+    text-align: center;
+  }
+  /*==================
+  Grid Container
+  ==================*/
+  .grid-container {
+    -ms-grid-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+  }
+  /*==================
+  Download Buttons
+  ==================*/
+  .download-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .IOS-btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .Mac-btn {
+    width: 100%;
+    margin-left: 0px;
+  }
+  /*==================
+  Screen Container
+  ==================*/
+  .computer-screen-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .screen-headers {
+    margin-left: 0px;
+  }
+  .screen-headers p {
+    text-align: center;
+  }
+  .screen-image-wrapper {
+    position: relative;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  .screen-image-wrapper .screen-image {
+    margin-bottom: 50px;
+  }
+  /*==================
+  Features Container 
+  ==================*/
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*==================
+  Companies Container 
+  ==================*/
+  .companies-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0;
+    margin-bottom: 100px;
+  }
+  .company-image {
+    margin-bottom: 70px;
+  }
+  /*==================
+  Footer Container 
+  ==================*/
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .logo-small {
+    margin-right: 0px;
+  }
+  .col h5:first-child {
+    margin-bottom: 30px;
+  }
+  .footer-guide {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .social-media {
+    margin-left: 0px;
+  }
+  /*==================
+  Attribution
+  ==================*/
+  .attribution {
+    position: relative;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
